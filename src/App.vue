@@ -1,7 +1,8 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Главная</router-link> |
+    <router-link to="/instruction">Инструкция по применению</router-link> |
+    <router-link to="/links">Ссылки</router-link>
   </div>
   <router-view/>
 </template>
@@ -22,6 +23,12 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+#nav > a:hover {
+	color: #42b983;
 }
 
 #nav a.router-link-exact-active {
